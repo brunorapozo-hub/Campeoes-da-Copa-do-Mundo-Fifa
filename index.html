@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campeões da Copa do Mundo FIFA</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+header{
+    background:#00843d;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:20px auto;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    margin-bottom:10px;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color:#00843d;
+    margin-bottom:5px;
+}
+
+.stats{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+.box{
+    flex:1;
+    min-width:250px;
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    text-align:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🏆 Campeões da Copa do Mundo FIFA</h1>
+    <p>Histórico dos países campeões</p>
+</header>
+
+<div class="container">
+
+    <div class="stats">
+        <div class="box">
+            <h2>22</h2>
+            <p>Edições</p>
+        </div>
+
+        <div class="box">
+            <h2>8</h2>
+            <p>Países Campeões</p>
+        </div>
+    </div>
+
+    <input
+        type="text"
+        id="pesquisa"
+        placeholder="Pesquisar seleção..."
+    >
+
+    <div id="lista"></div>
+
+</div>
+
+<footer>
+    Projeto Acadêmico - Campeões da Copa do Mundo FIFA
+</footer>
+
+<script
