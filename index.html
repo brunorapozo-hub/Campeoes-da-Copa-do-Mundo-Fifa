@@ -1,69 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🏆 Campeões da Copa do Mundo FIFA</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    background:linear-gradient(135deg,#006400,#00a651);
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:15px;
+    font-size:1.2rem;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:30px 0;
+}
+
+.stats{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:40px;
+}
+
+.stat-box{
+    flex:1;
+    min-width:220px;
+    background:#1e293b;
+    padding:20px;
+    text-align:center;
+    border-radius:15px;
+}
+
+.stat-box h2{
+    color:#22c55e;
+}
+
+.section-title{
+    color:#22c55e;
+    margin:40px 0 20px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.flag{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.card h3{
+    color:#22c55e;
+    margin-bottom:10px;
+}
+
+.cards a{
+    text-decoration:none;
+    color:white;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+table th{
+    background:#00a651;
+}
+
+table th,
+table td{
+    border:1px solid #334155;
+    padding:12px;
+    text-align:center;
+}
+
+footer{
+    background:#020617;
+    padding:25px;
+    text-align:center;
+    margin-top:50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🏆 Campeões da Copa do Mundo FIFA</h1>
+
+<p>
+Portal com a história dos campeões mundiais, grandes jogadores, artilheiros e finais das Copas do Mundo.
+</p>
+
+</header>
+
+<div class="container">
+
+<div class="stats">
+
+<div class="stat-box">
+<h2>22</h2>
+<p>Copas Realizadas</p>
+</div>
+
+<div class="stat-box">
+<h2>8</h2>
+<p>Países Campeões</p>
+</div>
+
+<div class="stat-box">
+<h2>5</h2>
+<p>Títulos do Brasil</p>
+</div>
+
+</div>
+
 <h2 class="section-title">🌍 Seleções Campeãs</h2>
 
 <div class="cards">
 
-<a href="brasil.html" style="text-decoration:none;color:white;">
+<a href="brasil.html">
 <div class="card">
 <div class="flag">🇧🇷</div>
 <h3>Brasil</h3>
-<p>🏆 5 títulos</p>
+<p>5 títulos</p>
 </div>
 </a>
 
-<a href="alemanha.html" style="text-decoration:none;color:white;">
+<a href="alemanha.html">
 <div class="card">
 <div class="flag">🇩🇪</div>
 <h3>Alemanha</h3>
-<p>🏆 4 títulos</p>
+<p>4 títulos</p>
 </div>
 </a>
 
-<a href="italia.html" style="text-decoration:none;color:white;">
+<a href="italia.html">
 <div class="card">
 <div class="flag">🇮🇹</div>
 <h3>Itália</h3>
-<p>🏆 4 títulos</p>
+<p>4 títulos</p>
 </div>
 </a>
 
-<a href="argentina.html" style="text-decoration:none;color:white;">
+<a href="argentina.html">
 <div class="card">
 <div class="flag">🇦🇷</div>
 <h3>Argentina</h3>
-<p>🏆 3 títulos</p>
+<p>3 títulos</p>
 </div>
 </a>
 
-<a href="franca.html" style="text-decoration:none;color:white;">
+<a href="franca.html">
 <div class="card">
 <div class="flag">🇫🇷</div>
 <h3>França</h3>
-<p>🏆 2 títulos</p>
+<p>2 títulos</p>
 </div>
 </a>
 
-<a href="uruguai.html" style="text-decoration:none;color:white;">
+<a href="uruguai.html">
 <div class="card">
 <div class="flag">🇺🇾</div>
 <h3>Uruguai</h3>
-<p>🏆 2 títulos</p>
+<p>2 títulos</p>
 </div>
 </a>
 
-<a href="inglaterra.html" style="text-decoration:none;color:white;">
+<a href="inglaterra.html">
 <div class="card">
 <div class="flag">🏴</div>
 <h3>Inglaterra</h3>
-<p>🏆 1 título</p>
+<p>1 título</p>
 </div>
 </a>
 
-<a href="espanha.html" style="text-decoration:none;color:white;">
+<a href="espanha.html">
 <div class="card">
 <div class="flag">🇪🇸</div>
 <h3>Espanha</h3>
-<p>🏆 1 título</p>
+<p>1 título</p>
 </div>
 </a>
 
 </div>
+
+<h2 class="section-title">📈 Ranking de Títulos</h2>
+
+<table>
+
+<tr>
+<th>Posição</th>
+<th>Seleção</th>
+<th>Títulos</th>
+</tr>
+
+<tr>
+<td>🥇</td>
+<td>🇧🇷 Brasil</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>🥈</td>
+<td>🇩🇪 Alemanha</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>🥈</td>
+<td>🇮🇹 Itália</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>🥉</td>
+<td>🇦🇷 Argentina</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>4º</td>
+<td>🇫🇷 França</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>4º</td>
+<td>🇺🇾 Uruguai</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>5º</td>
+<td>🏴 Inglaterra</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>5º</td>
+<td>🇪🇸 Espanha</td>
+<td>1</td>
+</tr>
+
+</table>
+
+<h2 class="section-title">⚽ Maiores Artilheiros das Copas</h2>
+
+<table>
+
+<tr>
+<th>Jogador</th>
+<th>País</th>
+<th>Gols</th>
+</tr>
+
+<tr><td>Miroslav Klose</td><td>🇩🇪 Alemanha</td><td>16</td></tr>
+<tr><td>Ronaldo Fenômeno</td><td>🇧🇷 Brasil</td><td>15</td></tr>
+<tr><td>Gerd Müller</td><td>🇩🇪 Alemanha</td><td>14</td></tr>
+<tr><td>Just Fontaine</td><td>🇫🇷 França</td><td>13</td></tr>
+<tr><td>Pelé</td><td>🇧🇷 Brasil</td><td>12</td></tr>
+
+</table>
+
+<h2 class="section-title">⭐ Grandes Craques das Copas</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Pelé 🇧🇷</h3>
+<p>1970</p>
+</div>
+
+<div class="card">
+<h3>Maradona 🇦🇷</h3>
+<p>1986</p>
+</div>
+
+<div class="card">
+<h3>Zidane 🇫🇷</h3>
+<p>1998 e 2006</p>
+</div>
+
+<div class="card">
+<h3>Messi 🇦🇷</h3>
+<p>2022</p>
+</div>
+
+</div>
+
+<h2 class="section-title">🏆 Finais Memoráveis</h2>
+
+<table>
+
+<tr>
+<th>Ano</th>
+<th>Resultado</th>
+</tr>
+
+<tr><td>1958</td><td>🇧🇷 Brasil 5 x 2 Suécia</td></tr>
+<tr><td>1970</td><td>🇧🇷 Brasil 4 x 1 Itália</td></tr>
+<tr><td>1986</td><td>🇦🇷 Argentina 3 x 2 Alemanha</td></tr>
+<tr><td>1994</td><td>🇧🇷 Brasil 0 x 0 Itália (3x2 pênaltis)</td></tr>
+<tr><td>2002</td><td>🇧🇷 Brasil 2 x 0 Alemanha</td></tr>
+<tr><td>2022</td><td>🇦🇷 Argentina 3 x 3 França (4x2 pênaltis)</td></tr>
+
+</table>
+
+</div>
+
+<footer>
+
+<h3>🏆 Campeões da Copa do Mundo FIFA</h3>
+
+<p>Desenvolvido por Bruno Rapozo</p>
+
+</footer>
+
+</body>
+</html>
