@@ -12,7 +12,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
@@ -22,16 +22,16 @@ color:white;
 
 header{
 background:linear-gradient(135deg,#006400,#00a651);
-padding:70px 20px;
+padding:60px 20px;
 text-align:center;
 }
 
 header h1{
 font-size:3rem;
-margin-bottom:15px;
 }
 
 header p{
+margin-top:10px;
 font-size:1.2rem;
 }
 
@@ -42,31 +42,8 @@ margin:auto;
 padding:30px 0;
 }
 
-.section-title{
-margin:40px 0 20px;
-color:#22c55e;
-font-size:2rem;
-}
-
-.stats{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-margin:30px 0;
-}
-
-.stat-box{
-flex:1;
-min-width:220px;
-background:#1e293b;
-padding:20px;
-border-radius:15px;
-text-align:center;
-}
-
-.stat-box h2{
-color:#22c55e;
-font-size:2rem;
+.search{
+margin-bottom:30px;
 }
 
 .search input{
@@ -75,7 +52,11 @@ padding:15px;
 border:none;
 border-radius:10px;
 font-size:16px;
-margin-bottom:30px;
+}
+
+.section-title{
+margin:40px 0 20px;
+color:#22c55e;
 }
 
 .cards{
@@ -88,8 +69,9 @@ gap:20px;
 background:#1e293b;
 padding:20px;
 border-radius:15px;
-text-align:center;
+cursor:pointer;
 transition:.3s;
+text-align:center;
 }
 
 .card:hover{
@@ -102,22 +84,21 @@ margin-bottom:10px;
 }
 
 .card h3{
-color:#22c55e;
 margin-bottom:10px;
+color:#22c55e;
 }
 
 table{
 width:100%;
 border-collapse:collapse;
-margin-top:15px;
+margin-top:20px;
 }
 
-table th{
+th{
 background:#00a651;
 }
 
-table th,
-table td{
+th,td{
 padding:12px;
 border:1px solid #334155;
 text-align:center;
@@ -125,9 +106,43 @@ text-align:center;
 
 footer{
 background:#020617;
-text-align:center;
 padding:25px;
+text-align:center;
 margin-top:50px;
+}
+
+/* MODAL */
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.8);
+justify-content:center;
+align-items:center;
+}
+
+.modal-content{
+background:white;
+color:black;
+padding:25px;
+border-radius:15px;
+width:90%;
+max-width:500px;
+}
+
+.modal-content h2{
+margin-bottom:15px;
+}
+
+.close{
+float:right;
+cursor:pointer;
+font-size:25px;
+font-weight:bold;
 }
 
 </style>
@@ -137,55 +152,279 @@ margin-top:50px;
 
 <header>
 <h1>🏆 Campeões da Copa do Mundo FIFA</h1>
-<p>História, Campeões, Artilheiros e Finais de Todas as Copas do Mundo</p>
+
+<p>
+História dos campeões mundiais, artilheiros, finais e craques das Copas
+</p>
+
 </header>
 
 <div class="container">
 
-<div class="stats">
-
-<div class="stat-box">
-<h2>22</h2>
-<p>Copas Realizadas</p>
-</div>
-
-<div class="stat-box">
-<h2>8</h2>
-<p>Países Campeões</p>
-</div>
-
-<div class="stat-box">
-<h2>5</h2>
-<p>Títulos do Brasil</p>
-</div>
-
-</div>
-
 <div class="search">
-<input type="text" id="pesquisa" placeholder="Pesquisar seleção campeã...">
+<input
+type="text"
+id="pesquisa"
+placeholder="Pesquisar seleção campeã..."
+>
 </div>
 
-<h2 class="section-title">🌎 Seleções Campeãs</h2>
+<h2 class="section-title">🌍 Seleções Campeãs</h2>
 
-<div class="cards" id="cards"></div>
+<div id="cards" class="cards"></div>
 
-<h2 class="section-title">📈 Ranking Mundial</h2>
+<h2 class="section-title">📈 Ranking de Títulos</h2>
+
+<table>
+
+<tr>
+<th>Posição</th>
+<th>Seleção</th>
+<th>Títulos</th>
+</tr>
+
+<tr><td>🥇</td><td>🇧🇷 Brasil</td><td>5</td></tr>
+<tr><td>🥈</td><td>🇩🇪 Alemanha</td><td>4</td></tr>
+<tr><td>🥈</td><td>🇮🇹 Itália</td><td>4</td></tr>
+<tr><td>🥉</td><td>🇦🇷 Argentina</td><td>3</td></tr>
+<tr><td>4º</td><td>🇫🇷 França</td><td>2</td></tr>
+<tr><td>4º</td><td>🇺🇾 Uruguai</td><td>2</td></tr>
+<tr><td>5º</td><td>🏴 Inglaterra</td><td>1</td></tr>
+<tr><td>5º</td><td>🇪🇸 Espanha</td><td>1</td></tr>
+
+</table>
+
+<h2 class="section-title">⚽ Maiores Artilheiros</h2>
+
+<table>
+
+<tr>
+<th>Jogador</th>
+<th>País</th>
+<th>Gols</th>
+</tr>
+
+<tr><td>Miroslav Klose</td><td>🇩🇪</td><td>16</td></tr>
+<tr><td>Ronaldo</td><td>🇧🇷</td><td>15</td></tr>
+<tr><td>Gerd Müller</td><td>🇩🇪</td><td>14</td></tr>
+<tr><td>Just Fontaine</td><td>🇫🇷</td><td>13</td></tr>
+<tr><td>Pelé</td><td>🇧🇷</td><td>12</td></tr>
+
+</table>
+
+<h2 class="section-title">⭐ Melhores Jogadores</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>🥇 Brasil 🇧🇷</h3>
-<p>5 títulos</p>
+<h3>Pelé 🇧🇷</h3>
+<p>Copa de 1970</p>
 </div>
 
 <div class="card">
-<h3>🥈 Alemanha 🇩🇪</h3>
-<p>4 títulos</p>
+<h3>Maradona 🇦🇷</h3>
+<p>Copa de 1986</p>
 </div>
 
 <div class="card">
-<h3>🥈 Itália 🇮🇹</h3>
-<p>4 títulos</p>
+<h3>Zidane 🇫🇷</h3>
+<p>Copa de 2006</p>
 </div>
 
-<div class="card
+<div class="card">
+<h3>Messi 🇦🇷</h3>
+<p>Copa de 2022</p>
+</div>
+
+</div>
+
+<h2 class="section-title">🏆 Finais Históricas</h2>
+
+<table>
+
+<tr>
+<th>Ano</th>
+<th>Final</th>
+</tr>
+
+<tr><td>1958</td><td>🇧🇷 Brasil 5x2 Suécia 🇸🇪</td></tr>
+<tr><td>1970</td><td>🇧🇷 Brasil 4x1 Itália 🇮🇹</td></tr>
+<tr><td>1986</td><td>🇦🇷 Argentina 3x2 Alemanha 🇩🇪</td></tr>
+<tr><td>1994</td><td>🇧🇷 Brasil 0x0 Itália (3x2 pênaltis)</td></tr>
+<tr><td>2002</td><td>🇧🇷 Brasil 2x0 Alemanha 🇩🇪</td></tr>
+<tr><td>2022</td><td>🇦🇷 Argentina 3x3 França 🇫🇷 (4x2 pênaltis)</td></tr>
+
+</table>
+
+</div>
+
+<footer>
+
+<h3>🏆 Campeões da Copa do Mundo FIFA</h3>
+
+<p>Desenvolvido por Bruno Rapozo</p>
+
+</footer>
+
+<!-- MODAL -->
+
+<div id="modal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="fecharModal()">&times;</span>
+
+<h2 id="nomePais"></h2>
+
+<p id="infoTitulos"></p>
+
+<p id="infoAnos"></p>
+
+<p id="infoCraque"></p>
+
+</div>
+
+</div>
+
+<script>
+
+const campeoes = [
+
+{
+pais:"Brasil",
+bandeira:"🇧🇷",
+titulos:5,
+anos:"1958, 1962, 1970, 1994, 2002",
+craque:"Pelé"
+},
+
+{
+pais:"Alemanha",
+bandeira:"🇩🇪",
+titulos:4,
+anos:"1954, 1974, 1990, 2014",
+craque:"Beckenbauer"
+},
+
+{
+pais:"Itália",
+bandeira:"🇮🇹",
+titulos:4,
+anos:"1934, 1938, 1982, 2006",
+craque:"Paolo Rossi"
+},
+
+{
+pais:"Argentina",
+bandeira:"🇦🇷",
+titulos:3,
+anos:"1978, 1986, 2022",
+craque:"Maradona / Messi"
+},
+
+{
+pais:"França",
+bandeira:"🇫🇷",
+titulos:2,
+anos:"1998, 2018",
+craque:"Zidane"
+},
+
+{
+pais:"Uruguai",
+bandeira:"🇺🇾",
+titulos:2,
+anos:"1930, 1950",
+craque:"Obdulio Varela"
+},
+
+{
+pais:"Inglaterra",
+bandeira:"🏴",
+titulos:1,
+anos:"1966",
+craque:"Bobby Charlton"
+},
+
+{
+pais:"Espanha",
+bandeira:"🇪🇸",
+titulos:1,
+anos:"2010",
+craque:"Iniesta"
+}
+
+];
+
+const cards = document.getElementById("cards");
+
+function mostrar(lista){
+
+cards.innerHTML="";
+
+lista.forEach(item=>{
+
+cards.innerHTML+=`
+
+<div
+class="card"
+onclick="abrirModal('${item.pais}','${item.titulos}','${item.anos}','${item.craque}')"
+>
+
+<div class="flag">${item.bandeira}</div>
+
+<h3>${item.pais}</h3>
+
+<p>🏆 ${item.titulos} títulos</p>
+
+</div>
+
+`;
+
+});
+
+}
+
+mostrar(campeoes);
+
+document
+.getElementById("pesquisa")
+.addEventListener("keyup",function(){
+
+const valor=this.value.toLowerCase();
+
+const resultado=campeoes.filter(item=>
+item.pais.toLowerCase().includes(valor)
+);
+
+mostrar(resultado);
+
+});
+
+function abrirModal(nome,titulos,anos,craque){
+
+document.getElementById("modal").style.display="flex";
+
+document.getElementById("nomePais").innerHTML=nome;
+
+document.getElementById("infoTitulos").innerHTML=
+"🏆 Títulos: "+titulos;
+
+document.getElementById("infoAnos").innerHTML=
+"📅 Conquistas: "+anos;
+
+document.getElementById("infoCraque").innerHTML=
+"⭐ Maior jogador: "+craque;
+
+}
+
+function fecharModal(){
+
+document.getElementById("modal").style.display="none";
+
+}
+
+</script>
+
+</body>
+</html>
