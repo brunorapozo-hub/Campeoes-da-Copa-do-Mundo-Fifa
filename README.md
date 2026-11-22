@@ -1,110 +1,111 @@
 # 🏆 Campeões da Copa do Mundo FIFA
 
-![GitHub](https://img.shields.io/badge/Status-Concluído-success)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+## 🌍 Seleções Campeãs
+
+| Bandeira | Seleção | Títulos |
+|-----------|----------|----------|
+| 🇧🇷 | Brasil | 5 |
+| 🇩🇪 | Alemanha | 4 |
+| 🇮🇹 | Itália | 4 |
+| 🇦🇷 | Argentina | 3 |
+| 🇫🇷 | França | 2 |
+| 🇺🇾 | Uruguai | 2 |
+| 🏴 | Inglaterra | 1 |
+| 🇪🇸 | Espanha | 1 |
 
 ---
 
-## 📖 Sobre o Projeto
+## ⭐ Melhores Jogadores das Copas do Mundo
 
-O projeto **Campeões da Copa do Mundo FIFA** foi desenvolvido com o objetivo de apresentar os países campeões da maior competição de futebol do mundo.
+| Ano | Jogador |
+|------|----------|
+| 1930 | José Nasazzi 🇺🇾 |
+| 1934 | Giuseppe Meazza 🇮🇹 |
+| 1938 | Leônidas 🇧🇷 |
+| 1950 | Zizinho 🇧🇷 |
+| 1954 | Ferenc Puskás 🇭🇺 |
+| 1958 | Didi 🇧🇷 |
+| 1962 | Garrincha 🇧🇷 |
+| 1966 | Bobby Charlton 🏴 |
+| 1970 | Pelé 🇧🇷 |
+| 1974 | Johan Cruyff 🇳🇱 |
+| 1978 | Mario Kempes 🇦🇷 |
+| 1982 | Paolo Rossi 🇮🇹 |
+| 1986 | Diego Maradona 🇦🇷 |
+| 1990 | Salvatore Schillaci 🇮🇹 |
+| 1994 | Romário 🇧🇷 |
+| 1998 | Ronaldo 🇧🇷 |
+| 2002 | Oliver Kahn 🇩🇪 |
+| 2006 | Zinedine Zidane 🇫🇷 |
+| 2010 | Diego Forlán 🇺🇾 |
+| 2014 | Lionel Messi 🇦🇷 |
+| 2018 | Luka Modrić 🇭🇷 |
+| 2022 | Lionel Messi 🇦🇷 |
 
-A aplicação permite visualizar os campeões mundiais, consultar a quantidade de títulos conquistados por cada seleção e pesquisar informações rapidamente através de uma interface moderna e responsiva.
-
----
-
-## 🚀 Funcionalidades
-
-✅ Exibição dos campeões da Copa do Mundo FIFA
-
-✅ Pesquisa por país campeão
-
-✅ Visualização da quantidade de títulos
-
-✅ Exibição dos anos das conquistas
-
-✅ Interface responsiva
-
-✅ Estatísticas da competição
-
----
-
-## 🏅 Seleções Campeãs
-
-| Seleção | Títulos |
-|----------|----------|
-| 🇧🇷 Brasil | 5 |
-| 🇩🇪 Alemanha | 4 |
-| 🇮🇹 Itália | 4 |
-| 🇦🇷 Argentina | 3 |
-| 🇫🇷 França | 2 |
-| 🇺🇾 Uruguai | 2 |
-| 🏴 Inglaterra | 1 |
-| 🇪🇸 Espanha | 1 |
+Fonte: FIFA e registros históricos da Bola de Ouro das Copas do Mundo. 【1-83deef】【2-61914e】
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## ⚽ Maiores Artilheiros da História das Copas
 
-- HTML5
-- CSS3
-- JavaScript
-- GitHub Pages
+| Jogador | País | Gols |
+|----------|-------|-------|
+| Miroslav Klose | 🇩🇪 Alemanha | 16 |
+| Ronaldo Fenômeno | 🇧🇷 Brasil | 15 |
+| Gerd Müller | 🇩🇪 Alemanha | 14 |
+| Just Fontaine | 🇫🇷 França | 13 |
+| Lionel Messi | 🇦🇷 Argentina | 13* |
+| Pelé | 🇧🇷 Brasil | 12 |
 
----
-
-## 🌐 Aplicação Online
-
-Acesse o projeto:
-
-👉 https://brunorapozo-hub.github.io/Campeoes-da-Copa-do-Mundo-Fifa/
+*Total até a Copa de 2022. 【3-023067】
 
 ---
 
-## 📂 Estrutura do Projeto
+# 🏆 Todas as Finais da Copa do Mundo
 
-```text
-Campeoes-da-Copa-do-Mundo-Fifa/
+| Ano | Campeão | Placar |
+|------|----------|----------|
+| 1930 | 🇺🇾 Uruguai | 4 x 2 🇦🇷 Argentina |
+| 1934 | 🇮🇹 Itália | 2 x 1 Tchecoslováquia |
+| 1938 | 🇮🇹 Itália | 4 x 2 Hungria |
+| 1950 | 🇺🇾 Uruguai | 2 x 1 🇧🇷 Brasil |
+| 1954 | 🇩🇪 Alemanha | 3 x 2 Hungria |
+| 1958 | 🇧🇷 Brasil | 5 x 2 Suécia |
+| 1962 | 🇧🇷 Brasil | 3 x 1 Tchecoslováquia |
+| 1966 | 🏴 Inglaterra | 4 x 2 Alemanha Ocidental |
+| 1970 | 🇧🇷 Brasil | 4 x 1 Itália |
+| 1974 | 🇩🇪 Alemanha | 2 x 1 Holanda |
+| 1978 | 🇦🇷 Argentina | 3 x 1 Holanda |
+| 1982 | 🇮🇹 Itália | 3 x 1 Alemanha Ocidental |
+| 1986 | 🇦🇷 Argentina | 3 x 2 Alemanha Ocidental |
+| 1990 | 🇩🇪 Alemanha | 1 x 0 Argentina |
+| 1994 | 🇧🇷 Brasil | 0 x 0 Itália (3 x 2 pênaltis) |
+| 1998 | 🇫🇷 França | 3 x 0 Brasil |
+| 2002 | 🇧🇷 Brasil | 2 x 0 Alemanha |
+| 2006 | 🇮🇹 Itália | 1 x 1 França (5 x 3 pênaltis) |
+| 2010 | 🇪🇸 Espanha | 1 x 0 Holanda |
+| 2014 | 🇩🇪 Alemanha | 1 x 0 Argentina |
+| 2018 | 🇫🇷 França | 4 x 2 Croácia |
+| 2022 | 🇦🇷 Argentina | 3 x 3 França (4 x 2 pênaltis) |
 
-├── index.html
-├── README.md
-```
-
----
-
-## 📸 Demonstração
-
-A aplicação apresenta:
-
-- Banner principal
-- Estatísticas da Copa do Mundo
-- Cards dos campeões
-- Campo de pesquisa
-- Layout responsivo
-
----
-
-## 📋 Organização do Projeto
-
-O gerenciamento das tarefas foi realizado através do Trello, utilizando o modelo Kanban com as colunas:
-
-- Backlog
-- A Fazer
-- Em Andamento
-- Concluído
+Fonte: histórico oficial das finais das Copas do Mundo. 【4-b5fd76】【5-0ab691】
 
 ---
 
-## 👨‍💻 Autor
+## 📈 Ranking Mundial de Títulos
 
-**Bruno Rapozo**
+🥇 🇧🇷 Brasil — 5 títulos
 
-Projeto desenvolvido para fins acadêmicos.
+🥈 🇩🇪 Alemanha — 4 títulos
 
----
+🥈 🇮🇹 Itália — 4 títulos
 
-## 📄 Licença
+🥉 🇦🇷 Argentina — 3 títulos
 
-Este projeto é destinado exclusivamente para fins educacionais.
+4️⃣ 🇫🇷 França — 2 títulos
+
+4️⃣ 🇺🇾 Uruguai — 2 títulos
+
+5️⃣ 🏴 Inglaterra — 1 título
+
+5️⃣ 🇪🇸 Espanha — 1 título
