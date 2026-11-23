@@ -22,7 +22,7 @@ O sistema permite navegar para páginas exclusivas das seleções campeãs:
 - 🇮🇹 Itália
 - 🇫🇷 França
 - 🇺🇾 Uruguai
-- 🏴 Inglaterra
+- En Inglaterra
 - 🇪🇸 Espanha
 
 Cada página apresenta informações detalhadas sobre a trajetória da seleção nas Copas do Mundo FIFA.
